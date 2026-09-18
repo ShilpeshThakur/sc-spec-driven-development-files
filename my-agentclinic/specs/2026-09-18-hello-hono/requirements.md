@@ -2,7 +2,7 @@
 
 ## Scope
 
-This feature establishes the first runnable AgentClinic server and a minimal home page. It includes Hono setup, a single server-rendered home route, and TypeScript verification. It does not include the shared layout, visual styling system, database, authentication, or domain features planned for later phases.
+This feature establishes the first runnable AgentClinic server and a minimal home page. It includes Hono setup, a single server-rendered home route, a shared semantic layout, responsive base styling, and TypeScript verification. It does not include the database, authentication, or domain features planned for later phases.
 
 ## Functional requirements
 
@@ -14,13 +14,17 @@ This feature establishes the first runnable AgentClinic server and a minimal hom
 - The home page must include a short introduction explaining that AgentClinic helps AI agents find relief.
 - The implementation must be server-rendered with Hono JSX and must not require a client-side framework.
 - The page must use basic semantic HTML and remain usable without CSS or JavaScript.
+- The page must remain usable across mobile, tablet, and desktop viewport widths.
 
 ## Technical decisions
 
 - Use Hono as the TypeScript-first server framework.
 - Use `tsx` to run the TypeScript server during development.
 - Use Hono JSX for the minimal server-rendered home page.
+- Use Vitest tests as the primary automated validation suite.
 - Use TypeScript’s compiler to verify the application builds successfully.
+- Provide an `npm run validate` script that runs the Vitest suite and TypeScript build.
+- Use responsive CSS media queries and fluid layout rules for viewport-specific presentation.
 - Keep the server entry point and page component small so the shared base layout can be added in Phase 2.
 
 ## Context

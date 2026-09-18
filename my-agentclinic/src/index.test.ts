@@ -23,6 +23,9 @@ describe('home page', () => {
 
     expect(response.status).toBe(200)
     expect(response.headers.get('content-type')).toMatch(/text\/css/)
-    expect(await response.text()).toContain('--')
+    const stylesheet = await response.text()
+
+    expect(stylesheet).toContain('--')
+    expect(stylesheet).toContain('@media (max-width: 40rem)')
   })
 })

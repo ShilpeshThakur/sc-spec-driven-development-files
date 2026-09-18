@@ -17,8 +17,9 @@
    - Keep the route independent of future domain and database concerns.
 
 4. **Add focused verification**
-   - Add an automated test for the route status, page title, heading, message, and HTML content type.
-   - Confirm the TypeScript build succeeds.
+   - Add Vitest tests for the route status, page title, heading, message, and HTML content type.
+   - Add a `validate` package script that runs the Vitest suite and TypeScript build together.
+   - Confirm the complete `npm run validate` command succeeds.
    - Document the local development command and expected result.
 
 5. **Add the shared main layout**
@@ -29,5 +30,6 @@
 
 6. **Add and connect the base stylesheet**
    - Create a CSS file with custom properties, a small reset, readable typography, and basic layout styles.
+   - Add responsive styles so the layout remains usable at narrow, medium, and wide viewport widths.
    - Serve the stylesheet from the application and link it from the layout document head.
    - Extend focused verification to cover the layout landmarks and stylesheet response.

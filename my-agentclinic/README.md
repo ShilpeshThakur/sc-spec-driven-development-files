@@ -13,11 +13,10 @@ Open <http://localhost:3000/>. The home page should display the AgentClinic head
 the message “AgentClinic is open for business”, and an introduction about helping
 AI agents find relief.
 
-Run the automated checks with:
+Run the complete automated validation with:
 
 ```sh
-npm test
-npm run build
+npm run validate
 ```
 
 ## Input from stakeholders
