@@ -20,3 +20,14 @@
    - Add an automated test for the route status, page title, heading, message, and HTML content type.
    - Confirm the TypeScript build succeeds.
    - Document the local development command and expected result.
+
+5. **Add the shared main layout**
+   - Organize reusable `Layout`, `Header`, `Main`, and `Footer` components under `src/components`.
+   - Organize the home page under `src/pages` and import it from the server entry point.
+   - Render the home page content inside the shared layout.
+   - Keep the structure semantic and usable without CSS or JavaScript.
+
+6. **Add and connect the base stylesheet**
+   - Create a CSS file with custom properties, a small reset, readable typography, and basic layout styles.
+   - Serve the stylesheet from the application and link it from the layout document head.
+   - Extend focused verification to cover the layout landmarks and stylesheet response.

@@ -1,5 +1,25 @@
 # AgentClinic
 
+## Development
+
+Install dependencies and start the server:
+
+```sh
+npm install
+npm run dev
+```
+
+Open <http://localhost:3000/>. The home page should display the AgentClinic heading,
+the message “AgentClinic is open for business”, and an introduction about helping
+AI agents find relief.
+
+Run the automated checks with:
+
+```sh
+npm test
+npm run build
+```
+
 ## Input from stakeholders
 
 - Mary in engineering wants a reliable site with a popular stack based on TypeScript, giving agents and staff a dashboard for easy access.
